@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './TimeComponent.css';
 import moment from 'moment';
 
+//import timezones from 'timezones.json';
+
 class TimeComponent extends Component {
 
   constructor(props) {
@@ -10,13 +12,14 @@ class TimeComponent extends Component {
     this.state = {
       currentTime: moment().format()
     }
-
   }
 
   componentDidMount() {
     // modify the state
     this.id = setInterval(() => {
-      this.setState({ currentTime: moment().format() });
+      this.setState({
+        currentTime: moment().format()
+      });
     }, 1000);
 
   }
