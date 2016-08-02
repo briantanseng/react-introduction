@@ -6,8 +6,11 @@
     "react-scripts": "0.2.1"
   },
   "dependencies": {
+    "moment": "^2.14.1",
+    "moment-timezone": "^0.5.5",
     "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "react-dom": "^15.2.1",
+    "timezones.json": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
